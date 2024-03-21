@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--required changes to app name and title-->
+    <string name="app_name">Demo_TiltBall_62467</string>
+    <string name="setuptitletext">Demo Tilt Ball skirill</string>
+    <string name="paramlabelorderofcontroltext">Order of control</string>
+    <string name="paramlabelgaintext">Gain</string>
+    <string name="paramlabelpathwidthtext">Path width</string>
+    <string name="paramlabelpathtypetext">Path type</string>
+    <!--add text for lap number spinner-->
+    <string name="paramlabellaptext">Number of laps</string>
+
+    <string name="button01text">OK</string>
+    <string name="button03text">Exit</string>
+
+    <!--additional text for result screen-->
+    <string name="resultText">Result</string>
+    <string name="lapnumbertext">Laps = </string>
+    <string name="laptimetext">Lap time = (mean/lap)</string>
+    <string name="wallhittext">Wall hits = </string>
+    <string name="percentinpath">In-path time = </string>
+
+
+    <string name="button04text">Setup</string>
+
+</resources>

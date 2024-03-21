@@ -1,0 +1,8 @@
+ca.yorku.eecs.mack.demotiltball62467.app-pngs-0 F:\work\proj\Demo_TiltBall_62467\app\build\generated\res\pngs\debug
+ca.yorku.eecs.mack.demotiltball62467.app-resValues-1 F:\work\proj\Demo_TiltBall_62467\app\build\generated\res\resValues\debug
+ca.yorku.eecs.mack.demotiltball62467.app-rs-2 F:\work\proj\Demo_TiltBall_62467\app\build\generated\res\rs\debug
+ca.yorku.eecs.mack.demotiltball62467.app-mergeDebugResources-3 F:\work\proj\Demo_TiltBall_62467\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+ca.yorku.eecs.mack.demotiltball62467.app-mergeDebugResources-4 F:\work\proj\Demo_TiltBall_62467\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5 F:\work\proj\Demo_TiltBall_62467\app\build\intermediates\merged_res\debug
+ca.yorku.eecs.mack.demotiltball62467.app-debug-6 F:\work\proj\Demo_TiltBall_62467\app\src\debug\res
+ca.yorku.eecs.mack.demotiltball62467.app-main-7 F:\work\proj\Demo_TiltBall_62467\app\src\main\res

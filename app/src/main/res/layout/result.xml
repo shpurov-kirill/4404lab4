@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff123456"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff123456"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setupTitle"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:background="#ff234567"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="@string/resultText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lapNumberText"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/lapnumbertext"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lapTimeText"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/laptimetext"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/wallHitText"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/wallhittext"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/percentInPathText"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/percentinpath"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Button04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickSetup"
+                android:text="@string/button04text"
+                android:textAppearance="?android:attr/textAppearanceMedium"></Button>
+
+            <Button
+                android:id="@+id/Button05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickExit"
+                android:text="@string/button03text"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
