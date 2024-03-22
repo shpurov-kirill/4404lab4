@@ -56,12 +56,12 @@
         "source": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-main-7:\\drawable-hdpi\\icon.png"
     },
     {
-        "merged": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:\\layout_main.xml.flat",
-        "source": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-main-7:\\layout\\main.xml"
-    },
-    {
         "merged": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-main-7:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:\\layout_main.xml.flat",
+        "source": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-main-7:\\layout\\main.xml"
     },
     {
         "merged": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:\\mipmap-hdpi_ic_launcher.png.flat",
@@ -74,6 +74,10 @@
     {
         "merged": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:/layout_setup.xml.flat",
+        "source": "ca.yorku.eecs.mack.demotiltball62467.app-main-7:/layout/setup.xml"
     },
     {
         "merged": "C:\\Users\\mclli\\.gradle\\daemon\\7.5\\ca.yorku.eecs.mack.demotiltball62467.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
