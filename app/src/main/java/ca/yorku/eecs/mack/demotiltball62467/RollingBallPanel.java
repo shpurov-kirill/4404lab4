@@ -105,6 +105,13 @@ public class RollingBallPanel extends View
         super(contextArg, attrs, defStyle);
         initialize(contextArg);
     }
+    private Activity parentActivity;
+
+    public RollingBallPanel(Context contextArg, Activity parentActivity) {
+        super(contextArg);
+        this.parentActivity = parentActivity;
+        initialize(contextArg);
+    }
 
     // things that can be initialized from within this View
     private void initialize(Context c)
@@ -516,23 +523,32 @@ public class RollingBallPanel extends View
         return false;
     }
 
+
+
     // Initiates the results activity
     private void initiateResultsActivity() {
         //initiate results activity
 
-        Intent i = new Intent(getContext(), DemoTiltBall62467Activity.class);
+        Intent i = new Intent(getContext(), ResultScreen.class);
         Bundle b = new Bundle();
         b.putInt("laps_done", completedLaps);
-        b.putDouble("Lap_time", totalLapTime*1.0/completedLaps);
+        b.putDouble("lap_time", (double)totalLapTime/completedLaps);
         b.putInt("wall_hits", wallHits);
-        b.putDouble("pathWidth", totalTimeInPath*1.0/totalLapTime);
+        b.putDouble("path_width", (double)totalTimeInPath/totalLapTime);
 
-        Intent myIntent = new Intent(RollingBallPanel.this.getContext().getApplicationContext(), ResultScreen.class);
-        myIntent.putExtras(b);
-        myIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        RollingBallPanel.this.getContext().getApplicationContext().startActivity(myIntent);
+        //Intent myIntent = new Intent(RollingBallPanel.this.getContext().getApplicationContext(), ResultScreen.class);
+        i.putExtras(b);
+        i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        //invalidate();
+
+        getContext().startActivity(i);
+        if (parentActivity != null) {
+            parentActivity.finish();
+        }
+        //RollingBallPanel.this.getContext().getApplicationContext().startActivity(i);
         
 
 
     }
+
 }

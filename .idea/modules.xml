@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo_TiltBall_62467.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo_TiltBall_62467.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Demo_TiltBall_62467.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4404lab4.iml" filepath="$PROJECT_DIR$/.idea/modules/4404lab4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4404lab4.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4404lab4.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4404lab4.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4404lab4.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4404lab4.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4404lab4.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4404lab4.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4404lab4.app.unitTest.iml" />
     </modules>
   </component>
 </project>

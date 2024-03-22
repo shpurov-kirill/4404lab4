@@ -1,6 +1,7 @@
 package ca.yorku.eecs.mack.demotiltball62467;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.hardware.Sensor;
@@ -64,6 +65,7 @@ public class DemoTiltBall62467Activity extends Activity implements SensorEventLi
     ScreenRefreshTimer refreshScreen;
     private SensorManager sm;
     private Sensor sA, sM, sO;
+    private static final int RESULT_CLOSE_ALL = 1;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -73,6 +75,7 @@ public class DemoTiltBall62467Activity extends Activity implements SensorEventLi
         Log.i(MYDEBUG, "Got here! (DemoTiltBall62467Activity - onCreate)");
         
         setContentView(R.layout.main);
+        RollingBallPanel rollingBallPanel = new RollingBallPanel(this, this);
 
         // get parameters selected by user from setup dialog
         Bundle b = getIntent().getExtras();
@@ -142,6 +145,15 @@ public class DemoTiltBall62467Activity extends Activity implements SensorEventLi
         // setup the screen refresh timer (updates every REFRESH_INTERVAL milliseconds)
         refreshScreen = new ScreenRefreshTimer(REFRESH_INTERVAL, REFRESH_INTERVAL);
         refreshScreen.start();
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_CLOSE_ALL) {
+            setResult(RESULT_CLOSE_ALL);
+            finish();
+        }
+        Log.i("MYDEBUG", "Got here! (exit main)");
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     /*
@@ -287,8 +299,7 @@ public class DemoTiltBall62467Activity extends Activity implements SensorEventLi
     /*
      * Screen updates are initiated in onFinish which executes every REFRESH_INTERVAL milliseconds
      */
-    private class ScreenRefreshTimer extends CountDownTimer
-    {
+    private class ScreenRefreshTimer extends CountDownTimer{
         ScreenRefreshTimer(long millisInFuture, long countDownInterval)
         {
             super(millisInFuture, countDownInterval);
@@ -298,6 +309,7 @@ public class DemoTiltBall62467Activity extends Activity implements SensorEventLi
         public void onTick(long millisUntilFinished)
         {
         }
+
 
         @Override
         public void onFinish()
@@ -318,4 +330,5 @@ public class DemoTiltBall62467Activity extends Activity implements SensorEventLi
             this.start();
         }
     }
+
 }

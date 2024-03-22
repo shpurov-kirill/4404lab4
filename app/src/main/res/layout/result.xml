@@ -89,23 +89,23 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/Button04"
+                android:id="@+id/Button06"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="clickSetup"
+                android:onClick="clickSetup2"
                 android:text="@string/button04text"
-                android:textAppearance="?android:attr/textAppearanceMedium"></Button>
-
-            <Button
-                android:id="@+id/Button05"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="clickExit"
-                android:text="@string/button03text"
                 android:textAppearance="?android:attr/textAppearanceMedium">
             </Button>
+
+            <Button
+                android:id="@+id/Button07"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickExit2"
+                android:text="@string/button03text"
+                android:textAppearance="?android:attr/textAppearanceMedium"></Button>
         </LinearLayout>
 
     </LinearLayout>
