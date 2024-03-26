@@ -1,5 +1,0 @@
-ca.yorku.eecs.mack.demotiltball62467.test.app-androidTest-0 C:\projects\4443\Demo_TiltBall_62467\app\build\generated\res\resValues\androidTest\debug
-ca.yorku.eecs.mack.demotiltball62467.test.app-androidTest-1 C:\projects\4443\Demo_TiltBall_62467\app\build\generated\res\rs\androidTest\debug
-ca.yorku.eecs.mack.demotiltball62467.test.app-mergeDebugAndroidTestResources-2 C:\projects\4443\Demo_TiltBall_62467\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-ca.yorku.eecs.mack.demotiltball62467.test.app-mergeDebugAndroidTestResources-3 C:\projects\4443\Demo_TiltBall_62467\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-ca.yorku.eecs.mack.demotiltball62467.test.app-merged_res-4 C:\projects\4443\Demo_TiltBall_62467\app\build\intermediates\merged_res\debugAndroidTest

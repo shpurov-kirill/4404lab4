@@ -1,4 +1,0 @@
-#Tue Mar 12 19:00:37 EDT 2024
-base.0=C\:\\projects\\4443\\Demo_TiltBall_62467\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

@@ -6,60 +6,62 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="13"
-8-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml
+8-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml
+9-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
-11-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:7:5-84
-11-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:7:22-81
-12    <uses-permission android:name="android.permission.VIBRATE" >
-12-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:8:5-9:23
-12-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:8:22-63
-13    </uses-permission>
-14
-15    <application
-15-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:11:5-30:19
-16        android:allowBackup="false"
-16-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:12:9-36
-17        android:debuggable="true"
-18        android:icon="@mipmap/ic_launcher"
-18-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:13:9-43
-19        android:label="@string/app_name"
-19-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:14:9-41
-20        android:testOnly="true"
-21        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-21-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:15:9-67
-22        <activity
-22-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:16:9-24:20
-23            android:name="ca.yorku.eecs.mack.demotiltball62467.DemoTiltBallSetup"
-23-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:17:13-82
-24            android:exported="true" >
-24-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:18:13-36
+11    <uses-permission android:name="android.permission.VIBRATE" >
+11-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:7:5-8:23
+11-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:7:22-63
+12    </uses-permission>
+13
+14    <application
+14-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:10:5-29:19
+15        android:allowBackup="false"
+15-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:11:9-36
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:12:9-43
+18        android:label="@string/app_name"
+18-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:13:9-41
+19        android:testOnly="true"
+20        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+20-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:14:9-67
+21        <activity
+21-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:15:9-23:20
+22            android:name="ca.yorku.eecs.mack.demotiltball62467.DemoTiltBallSetup"
+22-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:16:13-82
+23            android:exported="true"
+23-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:17:13-36
+24            android:launchMode="singleTask" >
+24-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:15:19-50
 25            <intent-filter>
-25-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:19:13-23:29
+25-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:18:13-22:29
 26                <action android:name="android.intent.action.MAIN" />
-26-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:20:17-69
-26-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:20:25-66
+26-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:19:17-69
+26-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:19:25-66
 27                <action android:name="android.intent.action.VIEW" />
-27-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:21:17-69
-27-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:21:25-66
+27-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:20:17-69
+27-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:20:25-66
 28
 29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:22:17-77
-29-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:22:27-74
+29-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:21:17-77
+29-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:21:27-74
 30            </intent-filter>
 31        </activity>
-32        <activity android:name="ca.yorku.eecs.mack.demotiltball62467.ResultScreen" />
-32-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:25:9-48
-32-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:25:19-46
-33        <activity
-33-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:26:9-29:20
-34            android:name="ca.yorku.eecs.mack.demotiltball62467.DemoTiltBall62467Activity"
-34-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:27:13-90
-35            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-35-->C:\projects\4443\demotiltGH\4404lab4\app\src\main\AndroidManifest.xml:28:13-71
-36        </activity>
-37    </application>
-38
-39</manifest>
+32        <activity
+32-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:24:9-81
+33            android:name="ca.yorku.eecs.mack.demotiltball62467.ResultScreen"
+33-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:24:52-79
+34            android:label="@string/app_name" />
+34-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:24:19-51
+35        <activity
+35-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:25:9-28:20
+36            android:name="ca.yorku.eecs.mack.demotiltball62467.DemoTiltBall62467Activity"
+36-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:26:13-90
+37            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+37-->F:\work\proj\Demo_TiltBall_62467\app\src\main\AndroidManifest.xml:27:13-71
+38        </activity>
+39    </application>
+40
+41</manifest>

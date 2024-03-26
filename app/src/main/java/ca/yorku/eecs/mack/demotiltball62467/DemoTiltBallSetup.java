@@ -25,14 +25,17 @@ public class DemoTiltBallSetup extends Activity
 
 	//add array for lap numbers
 	final static int[] LAP_COUNT = {1, 2, 3, 4, 5};
-	private static final int RESULT_CLOSE_ALL = 1;
-	//added lapcount spinner
+//added lapcount spinner
 	Spinner spinOrderOfControl, spinGain, spinPathMode, spinPathWidth, lapCount;
 
 	// called when the activity is first created
 	@Override
 	public void onCreate(Bundle savedInstanceState) 
 	{
+		if (getIntent().getBooleanExtra("EXIT", false)) {
+			finish();
+			System.exit(0);
+		}
 		super.onCreate(savedInstanceState);
 
 		Log.i(MYDEBUG, "Got here! (DemoTiltBallSetup - onCreate)");
@@ -68,16 +71,6 @@ public class DemoTiltBallSetup extends Activity
 		lapCount.setAdapter(adapter5);
 		lapCount.setSelection(0);
 	}
-	@Override
-	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if (resultCode == RESULT_CLOSE_ALL) {
-			setResult(RESULT_CLOSE_ALL);
-			finish();
-		}
-		Log.i("MYDEBUG", "Got here! (exit setup)");
-		super.onActivityResult(requestCode, resultCode, data);
-	}
-
 
 	// called when the "OK" button is tapped
 	public void clickOK(View view) 
@@ -112,8 +105,6 @@ public class DemoTiltBallSetup extends Activity
 		// comment out (return to setup after clicking BACK in main activity
 		//finish();
 	}
-
-
 
 	/** Called when the "Exit" button is pressed. */
 	public void clickExit(View view) 

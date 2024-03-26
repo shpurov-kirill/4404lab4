@@ -3,8 +3,8 @@ int drawable ball 0x7f020000
 int drawable icon 0x7f020001
 int id Button01 0x7f030000
 int id Button03 0x7f030001
-int id Button06 0x7f030017
-int id Button07 0x7f030015
+int id Button04 0x7f030002
+int id Button05 0x7f030003
 int id lapNumberText 0x7f030004
 int id lapTimeText 0x7f030005
 int id paramGain 0x7f030006

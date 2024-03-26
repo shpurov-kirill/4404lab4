@@ -1,5 +1,7 @@
 package ca.yorku.eecs.mack.demotiltball62467;
 
+import static ca.yorku.eecs.mack.demotiltball62467.DemoTiltBall62467Activity.cntxofParent;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +15,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 //sound library
@@ -20,6 +23,7 @@ import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
 
+import java.util.List;
 import java.util.Locale;
 
 public class RollingBallPanel extends View
@@ -78,14 +82,17 @@ public class RollingBallPanel extends View
     RectF finishLine;
     float[] updateY;
     //new variables required for line and lap tracking
-    boolean crossedLine;
+    boolean crossedLine = false;
     int completedLaps;
     double lapStTime, lapEdTime, totalTimeInPath;
+    double timeLeft, timeBack;
     float totalLapTime;
     int lapsNeedToComplete, lapsLeft;
     //add sound for moving through lap
     SoundPool soundPool;
     int lapSoundId;
+    boolean lapFlag;
+    int wallcounter = 0;
 
 
     public RollingBallPanel(Context contextArg)
@@ -103,13 +110,6 @@ public class RollingBallPanel extends View
     public RollingBallPanel(Context contextArg, AttributeSet attrs, int defStyle)
     {
         super(contextArg, attrs, defStyle);
-        initialize(contextArg);
-    }
-    private Activity parentActivity;
-
-    public RollingBallPanel(Context contextArg, Activity parentActivity) {
-        super(contextArg);
-        this.parentActivity = parentActivity;
         initialize(contextArg);
     }
 
@@ -164,6 +164,9 @@ public class RollingBallPanel extends View
         totalTimeInPath = 0;
         crossedLine = false;
         finishLine = new RectF();
+
+        timeLeft = 0;
+        timeBack = 0;
 
         //lap sound <only available from lollypop and over>
         AudioAttributes attributes = null;
@@ -336,25 +339,28 @@ public class RollingBallPanel extends View
 
 
 
+        if (completedLaps == 0 && lapFlag == false) {
+            lapStTime = System.currentTimeMillis();
+            lapFlag = true;
+        }
         //////
         //check if the ball crossed the finish line yet
         if (checkLapLineCrossing()) {
-            if (!crossedLine) {
-                crossedLine = true;
-                if (completedLaps == 0) {
-                    lapStTime = System.currentTimeMillis();
-                } else {
-                    lapEdTime = System.currentTimeMillis();
-                    double lapTime = lapEdTime - lapStTime;
-                    totalLapTime += lapTime;
-                    lapStTime = lapEdTime;
-                }
-                soundPool.play(lapSoundId, 1, 1, 1, 0, 1);
-                completedLaps++;
-            }
-        } else {
-            crossedLine = false;
+//            if (!crossedLine) {
+            //crossedLine = true;
+            Log.i("values","completed laps: " + completedLaps);
+                //lapEdTime = System.currentTimeMillis();
+                //double lapTime = lapEdTime - lapStTime;
+                //totalLapTime += lapTime;
+                //lapStTime = lapEdTime;
+
+            soundPool.play(lapSoundId, 1, 1, 1, 0, 1);
+            completedLaps++;
+//            }
         }
+//        } else {
+//            crossedLine = false;
+//        }
         ////////////end
 
         // if ball touches wall, vibrate and increment wallHits count
@@ -373,8 +379,11 @@ public class RollingBallPanel extends View
         if (completedLaps < lapsNeedToComplete) {
             //invalidate was moved here
             invalidate(); // force onDraw to redraw the screen with the ball in its new position
-        } else {
+        } else if (completedLaps == lapsNeedToComplete){
             // All laps done, show results activity
+            lapEdTime = System.currentTimeMillis();
+            double lapTime = lapEdTime - lapStTime;
+            totalLapTime += lapTime;
             initiateResultsActivity();
         }
         /////////////
@@ -523,32 +532,35 @@ public class RollingBallPanel extends View
         return false;
     }
 
-
-
     // Initiates the results activity
     private void initiateResultsActivity() {
         //initiate results activity
 
         Intent i = new Intent(getContext(), ResultScreen.class);
         Bundle b = new Bundle();
+        Activity parentActivity;
+
+        Log.i("values","completed laps avg: " + (totalLapTime/1000f)/(completedLaps));
+        float avg = (totalLapTime/1000f)/(completedLaps);
+        String avg2 = String.format("%.2f", avg);
+        Log.i("values","average 2:" + avg2);
+        parentActivity=(Activity)cntxofParent;
         b.putInt("laps_done", completedLaps);
-        b.putDouble("lap_time", (double)totalLapTime/completedLaps);
+        b.putString("lap_time", avg2);
         b.putInt("wall_hits", wallHits);
-        b.putDouble("path_width", (double)totalTimeInPath/totalLapTime);
+        b.putDouble("pathwidth", totalTimeInPath*1.0/totalLapTime);
+        Log.i("values", "laptime" + totalLapTime);
 
         //Intent myIntent = new Intent(RollingBallPanel.this.getContext().getApplicationContext(), ResultScreen.class);
         i.putExtras(b);
-        i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        //invalidate();
 
+        i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        //RollingBallPanel.this.getContext().getApplicationContext().startActivity(i)
         getContext().startActivity(i);
-        if (parentActivity != null) {
-            parentActivity.finish();
-        }
-        //RollingBallPanel.this.getContext().getApplicationContext().startActivity(i);
-        
+        //parentActivity.finishActivity(0);
+
+
 
 
     }
-
 }

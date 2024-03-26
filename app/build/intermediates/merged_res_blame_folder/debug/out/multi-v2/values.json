@@ -4,7 +4,24 @@
             "outputFile": "ca.yorku.eecs.mack.demotiltball62467.app-mergeDebugResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\projects\\4443\\demotiltGH\\4404lab4\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "source": "F:\\work\\proj\\Demo_TiltBall_62467\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,13,14,24,18,19,7,11,6,9,8,21,17,5,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "106,584,628,991,766,816,303,522,229,418,355,931,720,163,878",
+                        "endColumns": "56,43,45,46,49,61,51,60,73,60,62,57,45,65,52",
+                        "endOffsets": "158,623,669,1033,811,873,350,578,298,474,413,984,761,224,926"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "112,169,213,259,306,356,418,470,531,605,666,729,787,833,899",
+                        "endColumns": "56,43,45,46,49,61,51,60,73,60,62,57,45,65,52",
+                        "endOffsets": "164,208,254,301,351,413,465,526,600,661,724,782,828,894,947"
+                    }
+                },
+                {
+                    "source": "F:\\work\\proj\\Demo_TiltBall_62467\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,23 +35,6 @@
                         "startOffsets": "55",
                         "endColumns": "56",
                         "endOffsets": "107"
-                    }
-                },
-                {
-                    "source": "C:\\projects\\4443\\demotiltGH\\4404lab4\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "4,13,14,24,18,19,7,11,6,9,8,21,17,5,20",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "110,597,642,1015,784,835,310,533,235,427,363,952,737,168,898",
-                        "endColumns": "56,43,45,46,49,61,51,60,73,60,62,57,45,65,52",
-                        "endOffsets": "162,636,683,1057,829,892,357,589,304,483,421,1005,778,229,946"
-                    },
-                    "to": {
-                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "112,169,213,259,306,356,418,470,531,605,666,729,787,833,899",
-                        "endColumns": "56,43,45,46,49,61,51,60,73,60,62,57,45,65,52",
-                        "endOffsets": "164,208,254,301,351,413,465,526,600,661,724,782,828,894,947"
                     }
                 }
             ]
